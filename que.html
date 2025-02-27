@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE HTML>
+<html>   
+<style>
+   h3,h2 {
+    text-align: center;
+   }
+</style>
+<script>
+    //
+    //alert("Hello from browser");
+    function fruit (){
+        let fruits=[];
+        let currentfruits=[];
+        const apple=document.getElementById("1")?.innerHTML
+        fruits.push(apple)
+    
+        const banana=document.getElementById("2")?.innerHTML
+        fruits.push(banana);
+   
+        const cherry=document.getElementById("3")?.innerHTML
+        fruits.push(cherry);
+    //console.log(fruits);
+        const data=document.getElementById("demo").value
+        //console.log(data)
+
+     //fruits=fruits.includes(data);
+     //console.log(fruits);
+     
+     for(i=0;i<fruits.length;i++){
+       //console.log(fruits[i]);
+        if(fruits[i].startsWith(data)){
+            console.log(fruits[i])
+            currentfruits.push(fruits[i])
+
+        }
+     }
+     document.getElementById("currentfruits").innerText=currentfruits;
+    }
+</script>
+    <head>
+        <title>Filterable List</title>
+    </head>
+    <body>
+        <fieldset>
+        <div class="fruits">
+        <h1 style="text-align:center;"><strong>Filterable List</strong></h1>
+        <h2><input type="text" id="demo"></h2>
+        <button  onclick="fruit()">ok</button>
+        <h3 class="fruit" id="1">Apple</h3>
+        <h3 class="fruit" id="2">Banana</h3>
+        <h3 class="fruit" id="3">Cherry</h3>
+        <div id="currentfruits"></div>
+        
+       <!---- <h2></h2><br></br>
+        <h2></h2><br></br>-->
+        </div>
+        </fieldset>
+    </body>
+</html>
