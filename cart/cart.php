@@ -1,6 +1,6 @@
 <?php
 
-//echo "some test code here";
+//echo "some test code here tetstttt";
 $promocode_amt = 0;
 $discount_amt_label = "";
 if($order_data['promocode_id']>0 && $order_data['promocode_amt']>0) {
