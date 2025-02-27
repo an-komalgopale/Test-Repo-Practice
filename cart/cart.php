@@ -1,6 +1,7 @@
 <?php
 
 //echo "some test code here tetstttt";
+
 $promocode_amt = 0;
 $discount_amt_label = "";
 if($order_data['promocode_id']>0 && $order_data['promocode_amt']>0) {
@@ -853,7 +854,7 @@ check_update_cart();
     <!--<script-->
     <!--  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFvkfXaHULvziFdHwe0wsX2ij5RqbQH8I&callback=initAutocomplete&libraries=places"-->
     <!--  async-->
-    <!--></script>-->
+    <!--</script>-->
        <script
       src="https://maps.googleapis.com/maps/api/js?key&callback=initAutocomplete&libraries=places"
       async
