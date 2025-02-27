@@ -1,6 +1,6 @@
 <?php
 
-//echo "some test code here tetstttt";
+//echo "some test code here tetstttt test";
 
 $promocode_amt = 0;
 $discount_amt_label = "";
